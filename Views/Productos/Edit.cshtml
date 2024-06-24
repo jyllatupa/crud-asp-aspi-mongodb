@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Edit";
+}
+
+@model ConsumirAPI_MongoDB.Models.Products
+
+<h1>Editar Producto</h1>
+
+<form asp-action="Edit" asp-route-id="@Model.Id">
+    <div class="form-group">
+        <label for="Name">Nombre: </label>
+        <input type="text" asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Price">Precio: </label>
+        <input type="number" asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Stock">Stock: </label>
+        <input type="number" asp-for="Stock" class="form-control" />
+    </div>
+
+    <button type="submit" class="btn btn-warning">Guardar Cambios</button>
+</form>
+

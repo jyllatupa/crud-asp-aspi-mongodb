@@ -1,0 +1,26 @@
+﻿
+@{
+    ViewData["Title"] = "Create";
+}
+
+@model ConsumirAPI_MongoDB.DTO.ProductDTO
+
+<h1>Crear Nuevo Producto</h1>
+
+<form asp-action="Create">
+    <div class="form-group">
+        <label for="Name">Nombre: </label>
+        <input type="text" asp-for="Name" class="form-control"/>
+    </div>
+    <div class="form-group">
+        <label for="Price">Precio: </label>
+        <input type="number" asp-for="Price" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label for="Stock">Stock: </label>
+        <input type="number" asp-for="Stock" class="form-control" />
+    </div>
+    
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+
